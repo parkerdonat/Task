@@ -5,8 +5,9 @@
         <attribute name="isComplete" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
         <attribute name="name" attributeType="String" syncable="YES"/>
         <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="priority" attributeType="String" defaultValueString="medium" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Task" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="Task" positionX="-63" positionY="-18" width="128" height="120"/>
     </elements>
 </model>

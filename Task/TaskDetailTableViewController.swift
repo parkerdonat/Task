@@ -18,6 +18,7 @@ class TaskDetailTableViewController: UITableViewController {
     @IBOutlet weak var taskDueTextField: UITextField!
     @IBOutlet weak var taskNotesTextView: UITextView!
     @IBOutlet var dueDatePicker: UIDatePicker!
+    @IBOutlet weak var priorityTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,11 +51,13 @@ class TaskDetailTableViewController: UITableViewController {
     func updateTask() {
         
         let name = taskNameTextField.text!
+        let priority = priorityTextField.text!
         let due = dueDateValue
         let notes = taskNotesTextView.text
         
         if let task = self.task {
             task.name = name
+            task.priority = priority
             task.due = due
             task.notes = notes
         } else {
@@ -69,6 +72,7 @@ class TaskDetailTableViewController: UITableViewController {
         
         title = task.name
         taskNameTextField.text = task.name
+        priorityTextField.text = task.priority
         
         if let due = task.due {
             taskDueTextField.text = due.stringValue()

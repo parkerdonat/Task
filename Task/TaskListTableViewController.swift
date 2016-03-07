@@ -12,6 +12,13 @@ class TaskListTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let completedTasks = TaskController.sharedController.completedTasks.map {$0.name}
+        print("Completed Tasks: \(completedTasks)")
+        
+        let incompletedTasks = TaskController.sharedController.completedTasks.map {$0.name}
+        print("Incompleted Tasks: \(incompletedTasks)")
+        
 
     }
     

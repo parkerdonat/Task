@@ -18,5 +18,6 @@ extension Task {
     @NSManaged var isComplete: NSNumber
     @NSManaged var name: String
     @NSManaged var notes: String?
+    @NSManaged var priority: String
 
 }
