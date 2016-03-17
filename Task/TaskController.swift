@@ -60,6 +60,27 @@ class TaskController {
     
     //MARK: - Persistence
     
+    func loadFromPersistentStorage() {
+        
+        let unarchivedTasks = NSKeyedUnarchiver.unarchiveObjectWithFile(self.filePath(kTaskKey))
+        
+        if let tasks = unarchivedTasks as? [Task] {
+            self.tasks = tasks
+        }
+    }
     
+    func saveToPersistentStorage() {
+        
+        NSKeyedArchiver.archiveRootObject(self.tasks, toFile: self.filePath(kTaskKey))
+    }
+    
+    func filePath(key: String) -> String {
+        let directorySearchResults = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory,NSSearchPathDomainMask.AllDomainsMask, true)
+        let documentsPath: AnyObject = directorySearchResults[0]
+        let entriesPath = documentsPath.stringByAppendingString("/\(key).plist")
+        
+        return entriesPath
+    }
+
     
 }
