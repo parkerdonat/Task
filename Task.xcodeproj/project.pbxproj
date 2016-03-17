@@ -24,6 +24,7 @@
 		68D81D9E1BD8A63700A9F8FE /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D81D911BD89FD100A9F8FE /* Stack.swift */; };
 		68D81D9F1BD8ACA000A9F8FE /* Task+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D81D971BD8A05B00A9F8FE /* Task+CoreDataProperties.swift */; };
 		68D81DA01BD8ACA300A9F8FE /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D81D981BD8A05B00A9F8FE /* Task.swift */; };
+		DDDB66841C9B66CC00124D06 /* TaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDB66831C9B66CC00124D06 /* TaskController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		68D81D971BD8A05B00A9F8FE /* Task+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		68D81D981BD8A05B00A9F8FE /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		DD78B0581C8DF3D600632E52 /* Model 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Model 2.xcdatamodel"; sourceTree = "<group>"; };
+		DDDB66831C9B66CC00124D06 /* TaskController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 			children = (
 				68D81D971BD8A05B00A9F8FE /* Task+CoreDataProperties.swift */,
 				68D81D981BD8A05B00A9F8FE /* Task.swift */,
+				DDDB66831C9B66CC00124D06 /* TaskController.swift */,
 				68D78A251BD6C26500509A87 /* AppDelegate.swift */,
 				68D78A291BD6C26500509A87 /* Main.storyboard */,
 				68D78A551BD6C79500509A87 /* TaskListTableViewController.swift */,
@@ -288,6 +291,7 @@
 				68D81D991BD8A05B00A9F8FE /* Task+CoreDataProperties.swift in Sources */,
 				68D78A621BD6FC6F00509A87 /* DateHelpers.swift in Sources */,
 				68D78A261BD6C26500509A87 /* AppDelegate.swift in Sources */,
+				DDDB66841C9B66CC00124D06 /* TaskController.swift in Sources */,
 				68D78A581BD6C7A100509A87 /* TaskDetailTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
