@@ -30,9 +30,9 @@ class TaskController {
     }
     
     init() {
-        tasks = mockTasks
+        //tasks = mockTasks
         
-    // persistent?
+    loadFromPersistentStorage()
         
     }
 
@@ -47,6 +47,7 @@ class TaskController {
     
     func addTask(task: Task) {
         tasks.append(task)
+        saveToPersistentStorage()
     }
     
     func removeTask(task: Task) {
@@ -55,7 +56,7 @@ class TaskController {
             tasks.removeAtIndex(index)
         }
         
-        // save here
+        saveToPersistentStorage()
     }
     
     //MARK: - Persistence

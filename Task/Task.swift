@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Task: NSObject {
+class Task: NSObject, NSCoding {
     private let kNameKey = "name"
     private let kNotesKey = "notes"
     private let kDueKey = "due"
@@ -26,12 +26,12 @@ class Task: NSObject {
         self.isComplete = false
     }
     
-    //MARK: - NSCoding
+    // MARK: NSCoding
     
     @objc required init?(coder aDecoder: NSCoder) {
         
         guard let name = aDecoder.decodeObjectForKey(kNameKey) as? String else {
-         
+            
             self.name = ""
             self.notes = ""
             self.isComplete = false
@@ -46,6 +46,13 @@ class Task: NSObject {
         self.isComplete = aDecoder.decodeBoolForKey(kCompleteKey)
         
         super.init()
+    }
+    
+    @objc func encodeWithCoder(aCoder: NSCoder) {
+        aCoder.encodeObject(self.name, forKey: kNameKey)
+        aCoder.encodeObject(self.notes, forKey: kNotesKey)
+        aCoder.encodeObject(self.due, forKey: kDueKey)
+        aCoder.encodeBool(self.isComplete, forKey: kCompleteKey)
     }
     
     override func isEqual(object: AnyObject?) -> Bool {

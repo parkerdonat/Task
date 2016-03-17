@@ -17,6 +17,8 @@
 		DDB663C01C9B11A200EF16A1 /* TaskDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB663BF1C9B11A200EF16A1 /* TaskDetailTableViewController.swift */; };
 		DDB663C21C9B11B700EF16A1 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB663C11C9B11B700EF16A1 /* Task.swift */; };
 		DDB663C41C9B1CF200EF16A1 /* TaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB663C31C9B1CF200EF16A1 /* TaskController.swift */; };
+		DDB663C61C9B3C5E00EF16A1 /* DateHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB663C51C9B3C5E00EF16A1 /* DateHelpers.swift */; };
+		DDB663C81C9B416700EF16A1 /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB663C71C9B416700EF16A1 /* ButtonTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		DDB663BF1C9B11A200EF16A1 /* TaskDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDetailTableViewController.swift; sourceTree = "<group>"; };
 		DDB663C11C9B11B700EF16A1 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		DDB663C31C9B1CF200EF16A1 /* TaskController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskController.swift; sourceTree = "<group>"; };
+		DDB663C51C9B3C5E00EF16A1 /* DateHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelpers.swift; sourceTree = "<group>"; };
+		DDB663C71C9B416700EF16A1 /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				DDB663BF1C9B11A200EF16A1 /* TaskDetailTableViewController.swift */,
 				DDB663C11C9B11B700EF16A1 /* Task.swift */,
 				DDB663C31C9B1CF200EF16A1 /* TaskController.swift */,
+				DDB663C51C9B3C5E00EF16A1 /* DateHelpers.swift */,
+				DDB663C71C9B416700EF16A1 /* ButtonTableViewCell.swift */,
 				68D78A2C1BD6C26500509A87 /* Assets.xcassets */,
 				68D78A2E1BD6C26500509A87 /* LaunchScreen.storyboard */,
 				68D78A311BD6C26500509A87 /* Info.plist */,
@@ -269,6 +275,8 @@
 				68D78A261BD6C26500509A87 /* AppDelegate.swift in Sources */,
 				DDB663C41C9B1CF200EF16A1 /* TaskController.swift in Sources */,
 				DDB663C01C9B11A200EF16A1 /* TaskDetailTableViewController.swift in Sources */,
+				DDB663C81C9B416700EF16A1 /* ButtonTableViewCell.swift in Sources */,
+				DDB663C61C9B3C5E00EF16A1 /* DateHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
