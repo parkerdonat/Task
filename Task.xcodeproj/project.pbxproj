@@ -16,6 +16,7 @@
 		DDF8817A1CBEE4C000838096 /* TaskListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF881791CBEE4C000838096 /* TaskListTableViewController.swift */; };
 		DDF8817C1CBEE53400838096 /* TaskDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF8817B1CBEE53400838096 /* TaskDetailTableViewController.swift */; };
 		DDF8817E1CBEE58500838096 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF8817D1CBEE58500838096 /* Task.swift */; };
+		DDF881801CBEEAB800838096 /* TaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF8817F1CBEEAB800838096 /* TaskController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		DDF881791CBEE4C000838096 /* TaskListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskListTableViewController.swift; sourceTree = "<group>"; };
 		DDF8817B1CBEE53400838096 /* TaskDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDetailTableViewController.swift; sourceTree = "<group>"; };
 		DDF8817D1CBEE58500838096 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		DDF8817F1CBEEAB800838096 /* TaskController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				DDF881791CBEE4C000838096 /* TaskListTableViewController.swift */,
 				DDF8817B1CBEE53400838096 /* TaskDetailTableViewController.swift */,
 				DDF8817D1CBEE58500838096 /* Task.swift */,
+				DDF8817F1CBEEAB800838096 /* TaskController.swift */,
 				68D78A291BD6C26500509A87 /* Main.storyboard */,
 				68D78A2C1BD6C26500509A87 /* Assets.xcassets */,
 				68D78A2E1BD6C26500509A87 /* LaunchScreen.storyboard */,
@@ -264,6 +267,7 @@
 				DDF8817E1CBEE58500838096 /* Task.swift in Sources */,
 				DDF8817A1CBEE4C000838096 /* TaskListTableViewController.swift in Sources */,
 				68D78A261BD6C26500509A87 /* AppDelegate.swift in Sources */,
+				DDF881801CBEEAB800838096 /* TaskController.swift in Sources */,
 				DDF8817C1CBEE53400838096 /* TaskDetailTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

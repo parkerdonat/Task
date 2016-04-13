@@ -31,12 +31,13 @@ class Task: NSObject, NSCoding {
     
     @objc required init?(coder aDecoder: NSCoder) {
         
-        guard let name = aDecoder.decodeObjectForKey(NameKey) as? String else { return nil }
+        guard let name = aDecoder.decodeObjectForKey(NameKey) as? String,
+            isComplete = aDecoder.decodeObjectForKey(CompleteKey) as? Bool else { return nil }
         
         self.name = name
         self.notes = aDecoder.decodeObjectForKey(NotesKey) as? String
         self.due = aDecoder.decodeObjectForKey(DueKey) as? NSDate
-        self.isComplete = aDecoder.decodeBoolForKey(CompleteKey)
+        self.isComplete = isComplete
     }
     
     @objc func encodeWithCoder(aCoder: NSCoder) {
